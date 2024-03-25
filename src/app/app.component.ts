@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'demo-app';
+  item = 20;
+  fromparent = "this is from parent";
+
+  updateData(item : string)
+  {
+    console.warn(item);
+  }
 }

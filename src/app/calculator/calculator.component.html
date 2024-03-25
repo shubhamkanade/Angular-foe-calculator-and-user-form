@@ -1,0 +1,31 @@
+<p>calculator works!</p>
+  <div class="calculator">
+    <div>
+      <input matInput type="text" [(ngModel)]="result" readonly>
+    </div>
+
+    <div class="numbers">
+      <button mat-button (click)="appendValue('7')">7</button>
+      <button mat-button (click)="appendValue('8')">8</button>
+      <button mat-button (click)="appendValue('9')">9</button>
+      <button mat-button (click)="appendValue('+')">+</button>
+
+      <button mat-button (click)="appendValue('4')">4</button>
+      <button mat-button (click)="appendValue('5')">5</button>
+      <button mat-button (click)="appendValue('6')">6</button>
+      <button mat-button (click)="appendValue('-')">-</button>
+
+      <button mat-button (click)="appendValue('1')">1</button>
+      <button mat-button (click)="appendValue('2')">2</button>
+      <button mat-button (click)="appendValue('3')">3</button>
+      <button mat-button (click)="appendValue('*')">*</button>
+
+      <button mat-button (click)="appendValue('0')">0</button>
+      <button mat-button (click)="calculate()">=</button>
+      <button mat-button (click)="appendValue('/')">/</button>
+
+      <button mat-button (click)="squareRoot()">&#8730;</button>
+      <button mat-button (click)="square()">x<sup>2</sup></button>
+      <button mat-button (click)="clear()">C</button>
+    </div>
+  </div>
